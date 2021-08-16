@@ -2,6 +2,9 @@
 
 #include <algorithm>
 
+namespace LifeHash
+{
+
 using namespace std;
 
 Size ColorGrid::target_size(const Size& in_size, Pattern pattern) {
@@ -69,3 +72,5 @@ void ColorGrid::draw(const Point& p, const Color& color, const vector<Transform>
         set_value(color, p2);
     }
 }
+
+} // namespace LifeHash
